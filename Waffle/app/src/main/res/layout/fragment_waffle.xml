@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.waffle.WaffleFragment">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="+"
+        android:id="@+id/plus1"
+        android:background="@drawable/rnd_button"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="-"
+        android:id="@+id/subs"
+        android:background="@drawable/rnd_button"
+        android:layout_alignTop="@+id/plus1"
+        android:layout_toRightOf="@+id/plus1"
+        android:layout_toEndOf="@+id/plus1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="10dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/plus1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
