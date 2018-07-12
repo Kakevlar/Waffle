@@ -23,11 +23,6 @@
             android:label="@string/title_activity_wafflemeister"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity
-            android:name=".SelectionWaffle"
-            android:label="@string/title_activity_selection_waffle"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
     </application>
 
 </manifest>
