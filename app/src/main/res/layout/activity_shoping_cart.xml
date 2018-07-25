@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:textSize="40dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/textView11" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView11"
+        android:id="@+id/items">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New item"
+            android:id="@+id/buttonNew"
+            android:onClick="AddItem"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finish Order"
+            android:id="@+id/buttonEnd"
+            android:layout_below="@+id/listView"
+
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+
+
+        android:layout_below="@+id/items"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

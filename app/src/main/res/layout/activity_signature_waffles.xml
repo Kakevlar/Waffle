@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="20dp"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your waffle"
+        android:textSize="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="italic"
+        android:id="@+id/titlewaff"
+        android:textAlignment="center"
+        />
+            <RelativeLayout
+
+                android:paddingTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutwafflei"
+                android:layout_below="@+id/titlewaff">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/wafflelei"
+                    android:src="@drawable/waffleclassic"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="Leige"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Waffle Leige"
+                    android:textSize="20dp"
+                    android:id="@+id/titlelei"
+                    android:textStyle="italic"
+                    android:layout_alignTop="@+id/wafflelei"
+                    android:layout_toRightOf="@+id/wafflelei"
+                    android:layout_toEndOf="@+id/wafflelei" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="generic description"
+                    android:id="@+id/desclei"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/titlelei"
+                    android:layout_toRightOf="@+id/wafflelei"
+                    android:layout_toEndOf="@+id/wafflelei" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/layoutwafflei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutwafflecook">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/wafflecook"
+                    android:src="@drawable/wafflecookies"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="Cookies"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Waffle Cookies And Cream"
+                    android:textSize="20dp"
+                    android:id="@+id/titlecook"
+                    android:textStyle="italic"
+                    android:layout_alignTop="@+id/wafflecook"
+                    android:layout_toRightOf="@+id/wafflecook"
+                    android:layout_toEndOf="@+id/wafflecook"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="generic description"
+                    android:id="@+id/desccook"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/titlecook"
+                    android:layout_toRightOf="@+id/wafflecook"
+                    android:layout_toEndOf="@+id/wafflecook" />
+
+            </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layoutwafflecook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutwaffleau">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/waffleau"
+            android:src="@drawable/waffleau"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="AU" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Waffle AU Chocolate"
+            android:textSize="20dp"
+            android:id="@+id/titleau"
+            android:textStyle="italic"
+            android:layout_alignTop="@+id/waffleau"
+            android:layout_toRightOf="@+id/waffleau"
+            android:layout_toEndOf="@+id/waffleau"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="generic description"
+            android:id="@+id/descau"
+            android:textSize="10dp"
+            android:layout_below="@+id/titleau"
+            android:layout_toRightOf="@+id/waffleau"
+            android:layout_toEndOf="@+id/waffleau" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layoutwaffleau"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutwafflegobana">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/wafflegobana"
+            android:src="@drawable/wafflegobananas"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="Bananas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Waffle GO Bananas"
+            android:textSize="20dp"
+            android:id="@+id/titlegobana"
+            android:textStyle="italic"
+            android:layout_alignTop="@+id/wafflegobana"
+            android:layout_toRightOf="@+id/wafflegobana"
+            android:layout_toEndOf="@+id/wafflegobana"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="generic description"
+            android:id="@+id/descgobana"
+            android:textSize="10dp"
+            android:layout_below="@+id/titlegobana"
+            android:layout_toRightOf="@+id/wafflegobana"
+            android:layout_toEndOf="@+id/wafflegobana" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layoutwafflegobana"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutwafflemarsh">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/wafflemarsh"
+            android:src="@drawable/wafflemarshmellow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="Marshmellows"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Waffle Marshmellow Surprise"
+            android:textSize="20dp"
+            android:id="@+id/titlemarsh"
+            android:textStyle="italic"
+            android:layout_alignTop="@+id/wafflemarsh"
+            android:layout_toRightOf="@+id/wafflemarsh"
+            android:layout_toEndOf="@+id/wafflemarsh"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="generic description"
+            android:id="@+id/desmarsh"
+            android:textSize="10dp"
+            android:layout_below="@+id/titlemarsh"
+            android:layout_toRightOf="@+id/wafflemarsh"
+            android:layout_toEndOf="@+id/wafflemarsh" />
+
+    </RelativeLayout>
+</RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

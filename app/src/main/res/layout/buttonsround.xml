@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/algo"
+        android:paddingLeft="60dp"
+        >
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/checkmilk"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/checkdark"
+            />
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/checkwhite"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@id/algo"
+
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingTop="100dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/marshmellows"
+                >
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="+"
+                    android:id="@+id/plus1"
+                    android:background="@drawable/rnd_button"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="   0   "
+                    android:textStyle="bold"
+                    android:id="@+id/cont1"
+                    android:layout_alignTop="@+id/plus1"
+                    android:layout_toRightOf="@+id/plus1"
+                    android:layout_toEndOf="@+id/plus1" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/subs1"
+                    android:background="@drawable/rnd_button"
+                    android:layout_alignTop="@+id/cont1"
+                    android:layout_toRightOf="@+id/cont1"
+                    android:layout_toEndOf="@+id/cont1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MARSHMELLOWS"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:id="@+id/textmarsh"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/subs1"
+                    android:layout_toEndOf="@+id/subs1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutsprink"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="+"
+                    android:id="@+id/plus2"
+                    android:background="@drawable/rnd_button"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/subs2"
+                    android:background="@drawable/rnd_button"
+                    android:layout_alignTop="@+id/textView8"
+                    android:layout_toRightOf="@+id/textView8"
+                    android:layout_toEndOf="@+id/textView8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="   0   "
+                    android:textStyle="bold"
+                    android:id="@+id/textView8"
+                    android:layout_alignTop="@+id/plus2"
+                    android:layout_toRightOf="@+id/plus2"
+                    android:layout_toEndOf="@+id/plus2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPRINKLES"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:id="@+id/textView9"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/subs2"
+                    android:layout_toEndOf="@+id/subs2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

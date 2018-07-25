@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wafflelogo" />
+<RelativeLayout
+    android:layout_below="@+id/imageView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutwaff">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/wafflelei"
+        android:src="@drawable/waffle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="wafflein"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Signature Waffles"
+        android:textSize="20dp"
+        android:id="@+id/titlelei"
+        android:textStyle="italic"
+        android:layout_alignTop="@+id/wafflelei"
+        android:layout_toRightOf="@+id/wafflelei"
+        android:layout_toEndOf="@+id/wafflelei" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="generic description"
+        android:id="@+id/textView3"
+
+
+        android:textSize="10dp"
+        android:layout_below="@+id/titlelei"
+        android:layout_toRightOf="@+id/wafflelei"
+        android:layout_toEndOf="@+id/wafflelei" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/layoutwaff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutcrepe"
+        android:onClick="">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/crepe"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Crepes"
+            android:textSize="20dp"
+            android:id="@+id/textView4"
+            android:textStyle="italic"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:layout_toEndOf="@+id/imageButton3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="generic description"
+            android:id="@+id/textView5"
+
+            android:textSize="10dp"
+            android:layout_below="@+id/textView4"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:layout_toEndOf="@+id/imageButton3" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutshakes"
+        android:layout_below="@+id/layoutcrepe">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/shake"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Shakes"
+            android:textSize="20dp"
+            android:id="@+id/textView6"
+            android:textStyle="italic"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageButton4"
+            android:layout_toEndOf="@+id/imageButton4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="generic description"
+            android:id="@+id/textView7"
+
+            android:textSize="10dp"
+            android:layout_below="@+id/textView6"
+            android:layout_toRightOf="@+id/imageButton4"
+            android:layout_toEndOf="@+id/imageButton4" />
+
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
