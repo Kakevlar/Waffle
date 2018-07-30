@@ -93,16 +93,15 @@ public class ShopingCart extends AppCompatActivity {
 
     public void AddItem (View view){
         Intent add = new Intent (ShopingCart.this,Wafflemeister.class);
-        add.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        //add.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(add);
+
         }
 
     @Override
     protected void onResume() {
-        //3
-        super.onResume();
 
-        Toast.makeText(ShopingCart.this, "restarteame este",Toast.LENGTH_LONG).show();
+        super.onResume();
         String num = getIntent().getStringExtra("code");
         String title = getIntent().getStringExtra("title");
         String image = getIntent().getStringExtra("image");
@@ -113,7 +112,15 @@ public class ShopingCart extends AppCompatActivity {
         arrayList.add(new Info(ImageToSet, title.toString(), Desc));
         listView.setAdapter(myadapter);
         myadapter.notifyDataSetChanged();
+    }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+         super.onNewIntent(intent);
+        setIntent(intent);
+        String num = getIntent().getStringExtra("code");
+        String title = getIntent().getStringExtra("title");
+        String image = getIntent().getStringExtra("image");
     }
 
     @Override

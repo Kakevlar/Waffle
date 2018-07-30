@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="20dp"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select your crepe"
+                    android:textSize="40dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="italic"
+                    android:id="@+id/titlecrepe"
+                    android:textAlignment="center"
+                    />
+                <RelativeLayout
+
+                    android:paddingTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutcrepebanoffe"
+                    android:layout_below="@+id/titlecrepe">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/crepebano"
+                        android:src="@drawable/crepebanoffe"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:onClick="Banoffe"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Banoffe Crepe"
+                        android:textSize="20dp"
+                        android:id="@+id/titlebanoffe"
+                        android:textStyle="italic"
+                        android:layout_alignTop="@+id/crepebano"
+                        android:layout_toRightOf="@+id/crepebano"
+                        android:layout_toEndOf="@+id/crepebano" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="generic description"
+                        android:id="@+id/descbanoffe"
+                        android:textSize="10dp"
+                        android:layout_below="@+id/titlebanoffe"
+                        android:layout_toRightOf="@+id/crepebano"
+                        android:layout_toEndOf="@+id/crepebano" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/layoutcrepebanoffe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutcrepelemon">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/crepelemon"
+                        android:src="@drawable/crepelemonzuze"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:onClick="Lemon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Lemon Zuzet Crepe"
+                        android:textSize="20dp"
+                        android:id="@+id/titlelemon"
+                        android:textStyle="italic"
+                        android:layout_alignTop="@+id/crepelemon"
+                        android:layout_toRightOf="@+id/crepelemon"
+                        android:layout_toEndOf="@+id/crepelemon"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="generic description"
+                        android:id="@+id/desclemon"
+                        android:textSize="10dp"
+                        android:layout_below="@+id/titlelemon"
+                        android:layout_toRightOf="@+id/crepelemon"
+                        android:layout_toEndOf="@+id/crepelemon" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/layoutcrepelemon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutcrepenute">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/crepenutel"
+                        android:src="@drawable/crepenutella"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:onClick="Nutella" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Nutella Crepe"
+                        android:textSize="20dp"
+                        android:id="@+id/titlenutella"
+                        android:textStyle="italic"
+                        android:layout_alignTop="@+id/crepenutel"
+                        android:layout_toRightOf="@+id/crepenutel"
+                        android:layout_toEndOf="@+id/crepenutel"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="generic description"
+                        android:id="@+id/descnutel"
+                        android:textSize="10dp"
+                        android:layout_below="@+id/titlenutella"
+                        android:layout_toRightOf="@+id/crepenutel"
+                        android:layout_toEndOf="@+id/crepenutel" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/layoutcrepenute"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutcrepestrawchoco">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/crepestrawchoco"
+                        android:src="@drawable/crepestrawandchoco"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:onClick="Strawandchoco"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Strawberry and Chocolate Crepe"
+                        android:textSize="20dp"
+                        android:id="@+id/titlestraandchoco"
+                        android:textStyle="italic"
+                        android:layout_alignTop="@+id/crepestrawchoco"
+                        android:layout_toRightOf="@+id/crepestrawchoco"
+                        android:layout_toEndOf="@+id/crepestrawchoco"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="generic description"
+                        android:id="@+id/descstraandcho"
+                        android:textSize="10dp"
+                        android:layout_below="@+id/titlestraandchoco"
+                        android:layout_toRightOf="@+id/crepestrawchoco"
+                        android:layout_toEndOf="@+id/crepestrawchoco" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/layoutcrepestrawchoco"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutsweetcinna">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/crepesweetcinna"
+                        android:src="@drawable/crepesweetcinna"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:onClick="SweetCinna"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Sweet Cinnamon Crepe"
+                        android:textSize="20dp"
+                        android:id="@+id/titlesweetcinna"
+                        android:textStyle="italic"
+                        android:layout_alignTop="@+id/crepesweetcinna"
+                        android:layout_toRightOf="@+id/crepesweetcinna"
+                        android:layout_toEndOf="@+id/crepesweetcinna"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="generic description"
+                        android:id="@+id/descsweetcinna"
+                        android:textSize="10dp"
+                        android:layout_below="@+id/titlesweetcinna"
+                        android:layout_toRightOf="@+id/crepesweetcinna"
+                        android:layout_toEndOf="@+id/crepesweetcinna" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

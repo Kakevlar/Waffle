@@ -32,7 +32,7 @@
         android:layout_height="150dp"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:id="@+id/wafflelei"
+        android:id="@+id/crepebano"
         android:src="@drawable/waffle"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -45,11 +45,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Signature Waffles"
         android:textSize="20dp"
-        android:id="@+id/titlelei"
+        android:id="@+id/titlebanoffe"
         android:textStyle="italic"
-        android:layout_alignTop="@+id/wafflelei"
-        android:layout_toRightOf="@+id/wafflelei"
-        android:layout_toEndOf="@+id/wafflelei" />
+        android:layout_alignTop="@+id/crepebano"
+        android:layout_toRightOf="@+id/crepebano"
+        android:layout_toEndOf="@+id/crepebano" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,9 +60,9 @@
 
 
         android:textSize="10dp"
-        android:layout_below="@+id/titlelei"
-        android:layout_toRightOf="@+id/wafflelei"
-        android:layout_toEndOf="@+id/wafflelei" />
+        android:layout_below="@+id/titlebanoffe"
+        android:layout_toRightOf="@+id/crepebano"
+        android:layout_toEndOf="@+id/crepebano" />
 
 </RelativeLayout>
     <RelativeLayout

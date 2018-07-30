@@ -9,5 +9,7 @@
     <string name="title_activity_product_build">ProductBuild</string>
     <string name="title_activity_shoping_cart">ShopingCart</string>
     <string name="title_activity_signature_waffles">SignatureWaffles</string>
-    <string name="title_activity_custom_order">CustomOrder</string> />
+    <string name="title_activity_custom_order">CustomOrder</string>
+    <string name="title_activity_custom_order_cre">CustomOrderCre</string>
+    <string name="title_activity_signature_crepes">SignatureCrepes</string> />
 </resources>
